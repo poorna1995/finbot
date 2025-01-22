@@ -1,0 +1,14 @@
+unstructured[all-docs]
+unstructured-client 
+watermark 
+python-dotenv 
+pydantic 
+langchain 
+langchain-community 
+langchain_core 
+langchain_openai 
+chromadb
+groq
+openai
+langchain-groq
+
