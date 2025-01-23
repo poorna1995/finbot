@@ -4,6 +4,14 @@ __pycache__/
 *$py.class
 .venv/
 .env/
+.gitattributes
+.gitignore
+
+
+data/
+chroma_data/
+testing/
+Python REPL.ipynb
 
 # C extensions
 *.so

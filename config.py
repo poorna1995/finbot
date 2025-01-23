@@ -6,31 +6,58 @@ from typing import Dict, Optional, List, Any
 from pydantic import BaseModel
 
 
+
+
 @dataclass
+class ChromdbConfig:
+    QUERY_TRANSLATOR: str = "simple"
+    CHROMA_STORAGE: str = "./chroma_data"
+    COLLECTION_NAME: str = "sampleset_summaries"
+    EMBEDDING_MODEL: str = "text-embedding-3-large"
+
+class Config:
+    def __init__(self):
+        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+        self.UNSTRUCTURED_API_KEY = os.getenv("UNSTRUCTURED_API_KEY")
+        self.UNSTRUCTURED_API_URL = os.getenv("UNSTRUCTURED_API_URL")
+        self.GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+
+class Template:
+    PROMPT_TEMPLATE : str = (
+        """
+        Given the following document containing tables, perform the following tasks:
+        1. Analyze the data in the tables and generate a comprehensive summary that highlights the key insights, trends, or patterns present in the data. Ensure the summary is concise, informative, and easy to understand.
+        2. From the generated summary, extract and provide a meaningful and descriptive title that encapsulates the core findings.
+
+        The output should follow this format:
+        - Summary: <Provide the summary here>
+        - Title: <Provide the title here>
+        
+        Document: \n {doc}
+        """
+    )
+
+
 class Element(BaseModel):
     type: str
+    title: str
     page_content: Any
-    title : str
+    
+
+class Doc(BaseModel):
+    metadata: Dict[str, Any]
+    page_content: str
+
 
 
 class Model:
-    model="llama3:latest"
+    model="gpt-3.5-turbo"
 
 @dataclass
 class Document(BaseModel):
     metadata: Dict[str, Any]  
     page_content: str
-
-
-
-
-class Config:
-    def __init__(self):
-        load_dotenv()
-        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-        self.UNSTRUCTURED_API_KEY = os.getenv("UNSTRUCTURED_API_KEY")
-        self.UNSTRUCTURED_API_URL = os.getenv("UNSTRUCTURED_API_URL")
-        self.GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 
 
@@ -50,14 +77,6 @@ class UserQuery:
     query : SingleQuery | MultiQuery
 
 
-
-@dataclass
-class Chromdb : 
-    QUERY_TRANSLATOR = "simple"
-    CHROMA_STORAGE   = "../db_data/chorma_langchain_db"
-    COLLECTION_NAME  = "sampleset_summaries"
-    EMBEDDING_MODEL  = "text-embedding-3-large"
-    
 
 @dataclass
 class QueryPrompts:
@@ -81,12 +100,3 @@ class QueryPrompts:
         "Output (5 queries):"
     )
 
-
-
-
-prompt = ChatPromptTemplate.from_template(
-    """
-    1. Generate a summary for the following tables given: \n {doc}
-    2. Provide a title for the from the summary
-    """
-)

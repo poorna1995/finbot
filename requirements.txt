@@ -4,7 +4,7 @@ watermark
 python-dotenv 
 pydantic 
 langchain 
-langchain-community 
+langchain-community
 langchain_core 
 langchain_openai 
 chromadb
