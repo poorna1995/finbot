@@ -8,7 +8,7 @@ langchain-community
 langchain_core 
 langchain_openai 
 chromadb
-groq
 openai
 langchain-groq
+streamlit
 

@@ -1,0 +1,347 @@
+------------------------------------------------------------------------------------------
+>>> User Question: What was the revenue from operations for Q1 2024 vs. Q1 2023?
+------------------------------------------------------------------------------------------
+>> User Question: How did gross profit change from 2023 to 2024?
+>>> Time taken for query: How did gross profit change from 2023 to 2024? is 4.87 seconds.
+>>> Response: To find how the gross profit changed from 2023 to 2024, we need to subtract the gross profit of 2023 from the gross profit of 2024.
+
+Gross profit for 2024 is given as $46,257.
+Gross profit for 2023 is given as $44,414.
+
+Therefore, to calculate the change in gross profit from 2023 to 2024:
+
+$46,257 (Gross profit for 2024) - $44,414 (Gross profit for 2023) = $1,843
+
+So, the gross profit increased by $1,843 from 2023 to 2024. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the operating profit for Q1 2024?
+>>> Time taken for query: What was the operating profit for Q1 2024? is 3.99 seconds.
+>>> Response: To find the operating profit for Q1 2024, you need to refer to the table provided:
+
+- Operating profit for Q1 2024 is given as 7,621.
+
+Therefore, the operating profit for Q1 2024 is 7,621. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What were total operating expenses for FY 2024?
+>>> Time taken for query: What were total operating expenses for FY 2024? is 6.76 seconds.
+>>> Response: To calculate the total operating expenses for the year ended March 31, 2024, we need to sum up the "Selling and marketing expenses" and "General and administration expenses" provided in the table.
+
+Total Operating Expenses for FY 2024:
+Selling and Marketing Expenses: $1,735
+General and Administration Expenses: $1,819
+
+Total Operating Expenses = Selling and Marketing Expenses + General and Administration Expenses
+Total Operating Expenses = $1,735 + $1,819
+Total Operating Expenses = $3,554
+
+Therefore, the total operating expenses for the year ended March 31, 2024, amount to $3,554. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the profit attributable to owners for both years?
+>>> Time taken for query: What was the profit attributable to owners for both years? is 4.81 seconds.
+>>> Response: To calculate the profit attributable to owners for both years, you need to look at the "Profit attributable to Owners of the Company" line in the provided table for both 2024 and 2023.
+
+For the year 2024:
+Profit attributable to Owners of the Company = $26,233
+
+For the year 2023:
+Profit attributable to Owners of the Company = $24,095
+
+Therefore, the profit attributable to owners for both years are:
+- Year 2024: $26,233
+- Year 2023: $24,095 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was total comprehensive income for Q1 2024?
+>>> Time taken for query: What was total comprehensive income for Q1 2024? is 6.25 seconds.
+>>> Response: To calculate the total comprehensive income for Q1 2024, we need to add up all the income components provided in the table for the given quarter.
+
+Total Comprehensive Income for Q1 2024 = Interest income on financial assets carried at amortized cost (31 + 222) + Interest income on financial assets carried at fair value through other comprehensive income (318) + Income on investments carried at fair value through profit or loss (88) + Interest on income tax refund (1,916) + Exchange gains/losses on forward and options contracts (190) + Exchange gains/losses on translation of other assets and liabilities (-123) + Miscellaneous income (87)
+
+Total Comprehensive Income for Q1 2024 = 31 + 222 + 318 + 88 + 1,916 + 190 - 123 + 87
+Total Comprehensive Income for Q1 2024 = 2,729
+
+Therefore, the total comprehensive income for Q1 2024 is 2,729. 
+ Reference:data/doc37_page31_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How does profit for Q1 2024 compare with Q1 2023?
+>>> Time taken for query: How does profit for Q1 2024 compare with Q1 2023? is 5.18 seconds.
+>>> Response: To compare the profit for Q1 2024 with Q1 2023 based on the provided table, we need to focus on the "Profit for the period" row under the "Three months ended March 31" columns for both years.
+
+For Q1 2024:
+Profit for the period = $7,975
+
+For Q1 2023:
+Profit for the period = $6,134
+
+Now, to calculate the difference in profit between Q1 2024 and Q1 2023:
+Difference = Profit for Q1 2024 - Profit for Q1 2023
+Difference = $7,975 - $6,134
+Difference = $1,841
+
+Therefore, the profit for Q1 2024 is $1,841 higher than the profit for Q1 2023. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the revenue from operations for the year ending March 31, 2024, and how does it compare to March 31, 2023?
+>>> Time taken for query: 5.87 seconds.
+>>> Response: To calculate the revenue from operations for the year ending March 31, 2024, and compare it to March 31, 2023, we need to look at the total revenue figures for both years in the table.
+
+For the year ending March 31, 2024, the total revenue is given as 153,670 crore.
+
+For the year ending March 31, 2023, the total revenue is given as 146,767 crore.
+
+To find the difference in revenue between the two years, we can calculate:
+
+Revenue in 2024 - Revenue in 2023
+= 153,670 - 146,767
+= 6,903 crore
+
+Therefore, the revenue from operations for the year ending March 31, 2024, was 153,670 crore, and it increased by 6,903 crore compared to March 31, 2023. 
+ Reference:data/doc36_page30_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the cost of sales for the year ending March 31, 2024, compared to March 31, 2023?
+>>> Time taken for query: 5.51 seconds.
+>>> Response: To calculate the cost of sales for the year ending March 31, 2024, compared to March 31, 2023, we need to look at the table provided in the context.
+
+For the year ending March 31, 2024:
+Cost of Sales = $107,413
+
+For the year ending March 31, 2023:
+Cost of Sales = $102,353
+
+Therefore, the cost of sales for the year ending March 31, 2024, was $107,413, which is higher than the cost of sales for the year ending March 31, 2023, which was $102,353. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How does the gross profit for the three months ending March 31, 2024, differ from the same period in 2023?
+>>> Time taken for query: 5.47 seconds.
+>>> Response: To calculate the difference in gross profit for the three months ending March 31, 2024, compared to the same period in 2023, follow these steps:
+
+1. Determine the gross profit for 2024: Gross Profit 2024 = Revenue from operations 2024 - Cost of Sales 2024
+   Gross Profit 2024 = 37,923 - 26,748 = 11,175
+
+2. Determine the gross profit for 2023: Gross Profit 2023 = Revenue from operations 2023 - Cost of Sales 2023
+   Gross Profit 2023 = 37,441 - 26,011 = 11,430
+
+3. Calculate the difference in gross profit between 2024 and 2023:
+   Difference = Gross Profit 2024 - Gross Profit 2023
+   Difference = 11,175 - 11,430 = -255
+
+Therefore, the gross profit for the three months ending March 31, 2024, is $255 lower than the same period in 2023. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What are the components of operating expenses, including selling, marketing, and administration, and how have they changed between FY 2023 and FY 2024?
+>>> Time taken for query: 9.29 seconds.
+>>> Response: To calculate the components of operating expenses, including selling, marketing, and administration, and how they have changed between FY 2023 and FY 2024, we need to look at the given table data for the respective years.
+
+1. Selling and Marketing Expenses:
+   - FY 2023: $1,659
+   - FY 2024: $1,735
+   - Change: $1,735 - $1,659 = $76 increase in FY 2024 compared to FY 2023
+
+2. General and Administration Expenses:
+   - FY 2023: $1,894
+   - FY 2024: $1,819
+   - Change: $1,819 - $1,894 = $75 decrease in FY 2024 compared to FY 2023
+
+3. Total Operating Expenses:
+   - FY 2023: $3,553
+   - FY 2024: $3,554
+   - Change: $3,554 - $3,553 = $1 increase in FY 2024 compared to FY 2023
+
+Therefore, the components of operating expenses, including selling, marketing, and administration, have changed as follows between FY 2023 and FY 2024:
+- Selling and marketing expenses increased by $76
+- General and administration expenses decreased by $75
+- Total operating expenses increased by $1. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the total spending on selling and marketing expenses for the year ending March 31, 2024, compared to the previous year?
+>>> Time taken for query: 6.65 seconds.
+>>> Response: To calculate the total spending on selling and marketing expenses for the year ending March 31, 2024, and compare it to the previous year, we need to extract the relevant data from the table provided.
+
+From the table:
+- Selling and marketing expenses are not explicitly mentioned in the table. Therefore, we cannot directly provide the exact spending on selling and marketing expenses.
+
+However, we can make an assumption that the total spending on selling and marketing expenses is included in the total expenses or costs mentioned in the table. To calculate the total expenses for the year ending March 31, 2024, and the previous year, we can sum up the expenses for each geography:
+
+2024 Total Expenses = Total of 2024 North America + 2024 Europe + 2024 India + 2024 Rest of the world
+2023 Total Expenses = Total of 2023 North America + 2023 Europe + 2023 India + 2023 Rest of the world
+
+2024 Total Expenses = (92,411 + 42,267 + 3,881 + 15,111) crore
+2023 Total Expenses = (90,724 + 37,675 + 3,861 + 14,507) crore
+
+Calculate the total expenses for both years and then compare them to determine the difference in total spending on selling and marketing expenses for the year ending March 31, 2024, compared to the previous year. 
+ Reference:data/doc36_page30_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How did general and administration expenses vary between FY 2023 and FY 2024?
+>>> Time taken for query: 11.10 seconds.
+>>> Response: To calculate the variance in general and administration expenses between FY 2023 and FY 2024, we need to consider the relevant values from the table provided.
+
+In the table, the general and administration expenses are categorized under "Other expenses." We need to sum up the values for each fiscal year separately and then find the difference to determine the variance.
+
+For FY 2023:
+- Total general and administration expenses = 331 + 46 + 265 + 78 + 41 + 43 + (-80) + 0 + 86 + 151 + 181 = 1,146
+
+For FY 2024:
+- Total general and administration expenses = 1,278 + 199 + 1,007 + 326 + 170 + 210 + 75 + 16 + 121 + 533 + 781 = 4,716
+
+Now, calculate the variance:
+Variance = FY 2024 total expenses - FY 2023 total expenses
+Variance = 4,716 - 1,146
+Variance = 3,570
+
+Therefore, the variance in general and administration expenses between FY 2023 and FY 2024 is $3,570. 
+ Reference:data/doc38_page33_table_data.csv
+Pipeline executed for query.
+
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the finance cost incurred during the three months and year ending March 31, 2024?
+>>> Time taken for query: 6.04 seconds.
+>>> Response: To calculate the finance cost incurred during the three months and year ending March 31, 2024, we need to use the information provided in the table.
+
+First, we need to identify where the finance cost is listed in the table. Since the table only includes details about current taxes, deferred taxes, and income tax expense, the finance cost is not specifically mentioned. 
+
+Finance cost typically refers to the interest expenses incurred by a company on its borrowings or loans. It is not explicitly stated in the table provided. Therefore, without the exact figures for finance cost, we are unable to calculate it based on the information given.
+
+If you have more details or specific numbers related to finance costs, please provide them, so we can assist you further in calculating the finance cost for the specified period. 
+ Reference:data/doc34_page28_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the current tax expense for FY 2024, and how does it compare to FY 2023?
+>>> Time taken for query: 12.36 seconds.
+>>> Response: To calculate the current tax expense for FY 2024 and compare it to FY 2023, we need to look at the provided table.
+
+In the table:
+- Current taxes for FY 2024 is given as 8,390 crores
+- Current taxes for FY 2023 is given as 9,287 crores
+
+Therefore, the current tax expense for FY 2024 is 8,390 crores and it is lower than the current tax expense for FY 2023, which was 9,287 crores.
+
+So, the current tax expense for FY 2024 was 8,390 crores and it decreased compared to FY 2023. 
+ Reference:data/doc34_page28_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How has the deferred tax expense changed in FY 2024 relative to FY 2023?
+>>> Time taken for query: 6.81 seconds.
+>>> Response: To calculate how the deferred tax expense has changed in FY 2024 relative to FY 2023, follow these steps:
+
+Step 1: Find the deferred tax expense for FY 2024 and FY 2023.
+- For FY 2024, the deferred tax expense is ₹1,350 crore.
+- For FY 2023, the deferred tax expense is ₹73 crore.
+
+Step 2: Calculate the difference in deferred tax expense between FY 2024 and FY 2023.
+- Difference = Deferred Tax Expense (FY 2024) - Deferred Tax Expense (FY 2023)
+- Difference = ₹1,350 crore - ₹73 crore
+- Difference = ₹1,277 crore
+
+Step 3: Analyze the change in deferred tax expense.
+The deferred tax expense in FY 2024 increased by ₹1,277 crore compared to FY 2023, indicating a significant change in the tax expenses for the company over the two fiscal years. 
+ Reference:data/doc34_page28_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the profit for the period for FY 2024 compared to FY 2023?
+>>> Time taken for query: 5.25 seconds.
+>>> Response: To calculate the profit for the period for FY 2024 compared to FY 2023, we need to look at the "Profit for the period" figures for both years.
+
+For FY 2024:
+Profit for the period = $7,975 million
+
+For FY 2023:
+Profit for the period = $6,134 million
+
+To find the difference in profit between FY 2024 and FY 2023, we use the formula:
+Profit difference = Profit FY 2024 - Profit FY 2023
+
+Substitute the values:
+Profit difference = $7,975 million - $6,134 million
+Profit difference = $1,841 million
+
+Therefore, the profit for the period for FY 2024 is $1,841 million higher than FY 2023. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How did the exchange differences on the translation of foreign operations change between FY 2023 and FY 2024?
+>>> Time taken for query: 5.07 seconds.
+>>> Response: To calculate the change in exchange differences on the translation of foreign operations between FY 2023 and FY 2024, we need to subtract the values for 2023 from the values for 2024.
+
+Exchange differences on translation of foreign operations:
+FY 2024: $226 million
+FY 2023: $61 million
+
+Change = FY 2024 - FY 2023
+Change = $226 million - $61 million
+Change = $165 million
+
+Therefore, the exchange differences on the translation of foreign operations increased by $165 million between FY 2023 and FY 2024. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the profit attributable to the owners of the company for FY 2024 compared to FY 2023?
+>>> Time taken for query: 4.74 seconds.
+>>> Response: To calculate the profit attributable to the owners of the company for FY 2024 and FY 2023, we need to look at the "Profit attributable to Owners of the Company" row in the provided table.
+
+For FY 2024:
+Profit attributable to Owners of the Company = $26,233
+
+For FY 2023:
+Profit attributable to Owners of the Company = $24,095
+
+Therefore, the profit attributable to the owners of the company for FY 2024 compared to FY 2023 increased by $2,138 ($26,233 - $24,095). 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: How much profit was attributable to non-controlling interests for FY 2024?
+>>> Time taken for query: 4.35 seconds.
+>>> Response: To determine the profit attributable to non-controlling interests for the financial year 2024 based on the provided table, we need to look at the specific line item.
+
+From the table, we can see that the profit attributable to non-controlling interests for FY 2024 is given as follows:
+- Non-controlling interests: 15
+
+Therefore, the profit attributable to non-controlling interests for the financial year 2024 is 15. 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+
+------------------------------------------------------------------------------------------
+>>> User Question: What was the total comprehensive income attributable to the owners of the company for FY 2024 compared to FY 2023?
+>>> Time taken for query: 6.42 seconds.
+>>> Response: To calculate the total comprehensive income attributable to the owners of the company for FY 2024 compared to FY 2023, we need to consider the following:
+1. For FY 2024:
+- Total comprehensive income attributable to owners of the Company = $26,754
+2. For FY 2023:
+- Total comprehensive income attributable to owners of the Company = $24,598
+
+Therefore, the total comprehensive income attributable to the owners of the company for FY 2024 compared to FY 2023 increased by $2,156 ($26,754 - $24,598). 
+ Reference:data/doc49_page40_table_data.csv
+Pipeline executed for query.
+

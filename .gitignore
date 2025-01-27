@@ -7,9 +7,12 @@ __pycache__/
 .gitattributes
 .gitignore
 
-
+old/
+path/
 data/
 chroma_data/
+
+db/
 testing/
 Python REPL.ipynb
 

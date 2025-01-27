@@ -1,7 +1,7 @@
 from unstructured_client import UnstructuredClient
 from unstructured_client.models import shared, operations
 from unstructured_client.models.errors import SDKError
-from config import Config, Element
+from config import Config
 import os
 from unstructured.staging.base import dict_to_elements, elements_to_json
 
