@@ -5,6 +5,8 @@ from config import Metadata, TableMetaData
 from typing import List,Dict,Any
 from uuid import uuid4
 from langchain.schema import Document
+import os
+
 
 class DataPreprocessing:
     def __init__(self):
@@ -43,7 +45,7 @@ class DataPreprocessing:
             page_num = data.page_number
             json_path = f"data/doc{doc_num}_page{page_num}_table_schema.json"
             csv_path = f"data/doc{doc_num}_page{page_num}_table_data.csv"
-
+            os.makedirs(os.path.dirname(json_path), exist_ok=True)
             data_dict = data.dict()
             save_metadata(data_dict, json_path)
             save_csv(data_dict, csv_path)

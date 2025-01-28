@@ -5,6 +5,10 @@ from typing import Dict, Optional, List, Any
 from pydantic import BaseModel
 
 
+
+
+
+
 class ChromdbConfig:
     QUERY_TRANSLATOR: str = "simple"
     CHROMA_STORAGE: str = "./db"
@@ -12,11 +16,10 @@ class ChromdbConfig:
     EMBEDDING_MODEL: str = "text-embedding-3-large"
 
 class Config:
-    def __init__(self):
-        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-        self.UNSTRUCTURED_API_KEY = os.getenv("UNSTRUCTURED_API_KEY")
-        self.UNSTRUCTURED_API_URL = os.getenv("UNSTRUCTURED_API_URL")
-        self.GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    UNSTRUCTURED_API_KEY = os.getenv("UNSTRUCTURED_API_KEY")
+    UNSTRUCTURED_API_URL = os.getenv("UNSTRUCTURED_API_URL")
+    GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 
 class Metadata(BaseModel):

@@ -3,20 +3,43 @@ from langchain.vectorstores import Chroma
 from config import Config,Document,ChromdbConfig
 from typing import List,Dict,Any
 from translator import QueryTranslator
+import logging
+
+
+
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
     
 class VectorDB:
     def __init__(self):
         self.embeddings = OpenAIEmbeddings(model=ChromdbConfig.EMBEDDING_MODEL)
-        self.chroma_db = Chroma(embedding_function=self.embeddings, persist_directory=ChromdbConfig.CHROMA_STORAGE)
         self.collection_name = ChromdbConfig.COLLECTION_NAME
+        self.vector_store = Chroma(collection_name=self.collection_name, embedding_function=self.embeddings, persist_directory=ChromdbConfig.CHROMA_STORAGE)
         self.query_translator = QueryTranslator()
+        self.initialize_db()
+        
+    def initialize_db(self):
+        """Check if the database is initialized properly."""
+        try:
+            collections = self.vector_store._client.list_collections()
+            logger.info(f"Available Collections: {collections}")
+        except Exception as e:
+            logger.error(f"Error initializing database: {e}")
 
     def add_documents(self, documents: List[Document]):
-        """Adds documents to the vector database."""
-        self.vector_store = Chroma(collection_name=self.collection_name, embedding_function=self.embeddings)
-        self.vector_store.add_documents(documents)
+        if documents:
+            self.vector_store.add_documents(documents)
+            print(self.vector_store._client.list_collections())
+            self.vector_store.persist()  # Ensure data is saved to disk
+            logger.info(f"Added {len(documents)} documents to the vector store.")
+        else:
+            logger.warning("No documents provided to add.")
+        
+        # self.vector_store.add_documents(documents)
 
     def select_best_query(self, queries: List[str], k: int = 3) -> str:
         query_scores = {}

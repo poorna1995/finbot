@@ -2,6 +2,8 @@ import time
 import streamlit as st
 from main import DocumentProcessor  # Import the renamed class
 
+
+
 # Initialize Document Processor variable in session state
 if 'financial_document_processor' not in st.session_state:
     st.session_state.financial_document_processor = None
