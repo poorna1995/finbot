@@ -122,7 +122,6 @@ Access the Streamlit app at:
 
 ```bash
 URL: http://0.0.0.0:8502
-
 ```
 
 ### Method 2: Testing via Jupyter Notebook
@@ -132,6 +131,7 @@ URL: http://0.0.0.0:8502
 ```bash
 Create: python -m venv <name>
 
+activate : source <name>/bin/activate
 ```
 
 #### Step2: Run in Interactive Mode
@@ -140,7 +140,6 @@ Create: python -m venv <name>
 Run : src/test.ipynb
 
 Note: Already tested. Check the response in the test.ipynb
-
 ```
 
 ### Method 3: Testing
