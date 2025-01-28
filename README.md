@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](assests/main.png)
 
 # FinBot: Financial Report Query Interface
 
@@ -12,13 +12,13 @@ The data used to index the vector database comes from PDF files. These files are
 
 The implementation is divided into multiple components that work together to process queries and retrieve relevant information.
 
-![alt text](image-1.png)
+![alt text](assests/overall.png)
 
 ## Document Parsing - Unstructured.io
 
 It focuses on converting raw unstructured data (e.g., PDFs, Word documents, HTML files, emails) into structured, machine-readable formats such as JSON , HTML or text
 
-![alt text](image-2.png)
+![alt text](assests/unstructured.png)
 
 ## Data Preprocessing
 
@@ -31,7 +31,7 @@ It focuses on converting raw unstructured data (e.g., PDFs, Word documents, HTML
    - **Keywords**: Extract key terms from the data for easy reference.
 3. **Append Metadata**: Combine the filtered table with the generated summary, title, and keywords into a structured output format.
 
-![alt text](image-3.png)
+![alt text](assests/preprocessing.png)
 
 ## Indexer
 
@@ -44,7 +44,7 @@ The module takes a user query and makes a decision about what type of query the 
 1. **Infosys Financial PDF Documents**: Queries related to financial documents in PDF format.
 2. **Upload PDF Document**: Queries requesting the upload of PDF documents.
 
-![alt text](image-4.png)
+![alt text](assests/indexer.png)
 
 ## Query Translator
 
@@ -58,9 +58,9 @@ This method translates the user query into a format that matches the retrieval m
 
 For complex queries, this method splits them into simpler sub-queries that can be handled individually by the retrieval system. This enables the system to process more complex requests efficiently.
 
-![alt text](image-5.png)
+![alt text](assests/query.png)
 
-## Retriever Component
+## Retriever
 
 The **Retriever** component is responsible for fetching the most relevant information based on the user query. It works with two types of data sources:
 
@@ -68,15 +68,15 @@ The **Retriever** component is responsible for fetching the most relevant inform
 
 The retriever queries the Vector Database (such as **Chroma**) to retrieve the top k most relevant documents based on the semantic similarity between the query and the indexed documents.
 
-![alt text](image-6.png)
+![alt text](assests/retriver.png)
 
-## Generator Component
+## Generator
 
 The **Generator** component produces the final response based on the user query and the retrieved context. It combines the user’s query with the retrieved data (from the Vector DB) and generates an answer.
 
 The **LLM** (Large Language Model) is used to generate a comprehensive response, taking into account the user’s input and any context retrieved from the Vector Database.
 
-![alt text](image-7.png)
+![alt text](assests/generator.png)
 
 ## Setup
 
