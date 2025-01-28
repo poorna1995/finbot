@@ -11,7 +11,7 @@ from pydantic import BaseModel
 
 class ChromdbConfig:
     QUERY_TRANSLATOR: str = "simple"
-    CHROMA_STORAGE: str = "./db"
+    CHROMA_STORAGE: str = "./db_data"
     COLLECTION_NAME: str = "sampleset_summaries"
     EMBEDDING_MODEL: str = "text-embedding-3-large"
 

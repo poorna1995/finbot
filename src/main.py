@@ -31,6 +31,7 @@ class DocumentProcessor:
             reference = result['metadata']
             query_gen = QueryGenerator()
             generated_response = query_gen.handle_query(context, query, reference)
+            print(generated_response)
             return generated_response
         else:
             return "No results found for the query."

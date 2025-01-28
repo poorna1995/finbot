@@ -112,12 +112,41 @@ docker build -t finbot .
 docker run -p 8502:8502 finbot
 ```
 
-### Step5 : Streamlit host
+## Testing Methods
+
+### Method 1: Testing via UI Interface
+
+#### Streamlit Host
 
 Access the Streamlit app at:
 
 ```bash
-
 URL: http://0.0.0.0:8502
 
+```
+
+### Method 2: Testing via Jupyter Notebook
+
+#### Step1: Create a Virtual Environment
+
+```bash
+Create: python -m venv <name>
+
+```
+
+#### Step2: Run in Interactive Mode
+
+```bash
+Run : src/test.ipynb
+
+Note: Already tested. Check the response in the test.ipynb
+
+```
+
+### Method 3: Testing
+
+```bash
+Run: src/testing.py
+
+Note: Already tested. Check the response in test_response.txt.
 ```
