@@ -106,13 +106,13 @@ Build the Docker image, which also handles vector database indexing:
 docker build -t finbot .
 ```
 
-### Step4 : Run Docker
+### Step 4 : Run Docker
 
 ```bash
 docker run -p 8502:8502 finbot
 ```
 
-## Testing Methods
+## Step 5: Testing Methods
 
 ### Method 1: Testing via UI Interface
 
