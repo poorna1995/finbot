@@ -8,7 +8,7 @@ from langchain.schema import Document
 import os
 
 
-class DataPreprocessing:
+class DataProcessor:
     def __init__(self):
         self.llm = OpenAI()
 

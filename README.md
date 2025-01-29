@@ -98,15 +98,7 @@ UNSTRUCTURED_API_KEY=YOUR_UNSTRUCTURED_API_KEY
 UNSTRUCTURED_API_URL=YOUR_UNSTRUCTURED_API_URL
 ```
 
-### Step 3: Create a Virtual Environment
-
-```bash
-Create: python -m venv <name>
-
-activate : source <name>/bin/activate
-```
-
-### Step 4: Build Docker
+### Step 3: Build Docker
 
 Build the Docker image, which also handles vector database indexing:
 
@@ -114,13 +106,13 @@ Build the Docker image, which also handles vector database indexing:
 docker build -t finbot .
 ```
 
-### Step 5: Run Docker
+### Step 4: Run Docker
 
 ```bash
 docker run -p 8502:8502 finbot
 ```
 
-### Step 6: Testing Methods
+### Step 5: Testing Methods
 
 ### Method 1: Testing via UI Interface
 

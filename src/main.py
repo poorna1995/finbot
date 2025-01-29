@@ -6,7 +6,7 @@ from config import TableMetaData, Document
 import uuid
 from retrieval import DocumentRetrieval
 from generator import QueryGenerator
-from preprocessing import DataPreprocessing
+from preprocessing import DataProcessor
 
 class DocumentProcessor:
     def __init__(self, pdf_path):
@@ -14,7 +14,7 @@ class DocumentProcessor:
         self.pdf_path = pdf_path
         self.document_processor = DocumentClient()
         self.elements = self.document_processor.partition(pdf_path)
-        self.data_preprocessor = DataPreprocessing()
+        self.data_preprocessor = DataProcessor()
         self.structured_data = self.data_preprocessor.structure_data(self.elements)
         self.metadata_list = self.data_preprocessor.link_metadata(self.structured_data)
         self.document_list = self.data_preprocessor.create_documents(self.structured_data, self.metadata_list)
