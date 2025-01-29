@@ -137,7 +137,9 @@ Note: Already tested. Check the response in the test.ipynb
 ### Method 3: Testing
 
 ```bash
-Run: src/testing.py
+Run:
+cd src
+python testing.py
 
 Note: Already tested. Check the response in test_response.txt.
 ```
